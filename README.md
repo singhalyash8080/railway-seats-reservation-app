@@ -2,6 +2,11 @@
 
 A simple railway seat reservation app for a train coach(80 seats, 7 in each row, and 3 in the last row) in Angular, with only the number of seats as input.
 
+
+## Database structure
+
+No database is used, only a 2d matrix on the client side with boolean values is used to store the seat status in the coach for simplicity.
+
 ## Assumptions made
 
 1. The client app is managing the whole state and the system will refresh upon loading, hence is no need for a database.
