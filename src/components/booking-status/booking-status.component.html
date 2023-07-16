@@ -1,0 +1,15 @@
+<div
+  class="bookingStatus"
+  [ngClass]="bookingDone ? 'successStatusColor' : 'failedStatusColor'"
+>
+  <p>
+    {{ bookingStatusMessage }}
+  </p>
+
+  <p *ngIf="bookingDone">
+    <ng-container *ngFor="let seat of seatsBooked; let last = last">
+      {{ seat[0] + 1 }}{{ getSeatNumber(seat[0], seat[1])
+      }}{{ !last ? ', ' : '' }}
+    </ng-container>
+  </p>
+</div>

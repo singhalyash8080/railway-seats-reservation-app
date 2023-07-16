@@ -1,0 +1,39 @@
+.coach {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px black solid;
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+
+.seat-green {
+  background-color: green;
+  color: white;
+}
+
+.seat-red {
+  background-color: red;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+}

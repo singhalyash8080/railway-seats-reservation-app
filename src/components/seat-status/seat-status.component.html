@@ -1,0 +1,15 @@
+<h3>Current Seat status</h3>
+
+<div class="coach">
+  <div class="row" *ngFor="let row of seatStatus; let rowIndex = index">
+    <div
+      class="seat"
+      *ngFor="let seat of row; let columnIndex = index"
+      [ngClass]="{ 'seat-green': seat, 'seat-red': !seat }"
+    >
+      {{ rowIndex + 1 }}{{ getSeatNumber(rowIndex, columnIndex) }}
+    </div>
+  </div>
+</div>
+
+{{ numberOfSeats }}

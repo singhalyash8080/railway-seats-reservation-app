@@ -1,0 +1,9 @@
+<div class="app-body">
+  <app-navbar></app-navbar>
+  <app-booking-form (numberOfSeatsToBeBooked)="bookSeats($event)">
+  </app-booking-form>
+  <br />
+  <div>
+    <ng-container #dynamicComponentContainer></ng-container>
+  </div>
+</div>

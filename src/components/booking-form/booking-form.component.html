@@ -1,0 +1,15 @@
+<div class="booking-form">
+  <form #numberOfSeats="ngForm" (ngSubmit)="onClickSubmit(numberOfSeats.value)">
+    <input
+      class="numberOfSeatsInput"
+      type="number"
+      name="numberOfSeats"
+      placeholder="number of seats"
+      required
+      ngModel
+    />
+    <br />
+    <br />
+    <input class="submitButton" type="submit" value="Book" />
+  </form>
+</div>

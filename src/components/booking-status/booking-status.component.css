@@ -1,0 +1,13 @@
+.bookingStatus {
+  margin: 10px;
+  padding: 5px;
+  width: 60%;
+}
+
+.successStatusColor {
+  background-color: lightgreen;
+}
+
+.failedStatusColor {
+  background-color: rgb(233, 109, 109);
+}
